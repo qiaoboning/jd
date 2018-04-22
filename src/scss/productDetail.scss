@@ -1,0 +1,292 @@
+@charset "utf-8";
+/*css document*/
+body,div,p,ul,ol,li,dl,dt,dd,table,tr,td,th,form,h1,h2,h3,h4,h5,h6,fieldset,figure,hr,img,input{
+	margin:0;
+	padding:0;
+}
+html{
+	font-size: 26.67vw;
+}
+// html,body{
+// 	height:100%;
+// }
+body{
+	font-family: "微软雅黑",Arial;
+	// display:flex;
+	// flex-direction: column;
+	// justify-content:space-between; 
+}
+ol,ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+img{
+	border: none;
+	display: block;
+}
+i{
+	display:block;
+}
+header{
+	width:100%;
+	display:flex;
+	justify-content:space-between;
+	height:0.4rem;
+	align-items:center;
+	// padding:0 0.1rem;
+	// box-sizing:border-box;
+	a{
+		display:flex;
+		i{
+			color:#2f2f31;
+		}
+		.icon-fanhui{
+			font-size:12px;
+			padding-left:0.1rem;
+		}
+		.icon-dot3{
+			padding-left:0.1rem;
+			padding-right:0.1rem;
+		}
+		span{
+			font-size:12px;
+			color:#2f2f31;
+			padding:0 0.1rem;
+		}
+	}
+}
+
+section{
+	width:100%;
+	.banner{
+		height:3.75rem;
+		img{
+			width:100%;
+			height:100%;
+		}
+	}
+	.intro{
+		height:1.2rem;
+		padding:0.1rem;
+		.prod-title{
+			display:flex;
+			justify-content:space-between;
+			.title-text{
+				display:block;
+				font-size:16px;
+				line-height: 22px;
+				color: #232326;
+				width:3.04rem;
+			}
+			.icon-heart{
+				display:block;
+				text-align:center;
+				font-size:22px;
+				color:gray;
+				font-weight:bold;
+			}
+			.focus{
+				display:block;
+				font-size:14px;
+				color: #868489;
+			}
+		}
+		.prod-act{
+			margin: 11px 10px 0 0;
+		    font-size: 13px;
+		    line-height: 17px;
+		    color: #81838e;
+		}
+		.money{
+			display:flex;
+			justify-content:space-between;
+			.price{
+				display:flex;		
+				span{
+					display:block;
+					font-size:24px;
+					color:red;
+				}
+			}
+			.reduce{
+				width:0.63rem;
+				height:0.26rem;
+				text-align:center;
+				line-height:0.26rem;
+				font-size:10px;
+				border: 1px solid #bfbfbf;
+				border-radius: 6px;
+				color: #686868;
+			}
+		}
+	}
+	.blank{
+	    height: 0.1rem;
+	    border-top: 1px solid #f1f0f4;
+	    border-bottom: 1px solid #f1f0f4;
+	    background: #f0f1f3;
+	}
+	.whiteBar{
+		height:0.45rem;
+		display:flex;
+		align-items:center;
+		.box{
+			height:0.45rem;
+			display:flex;
+			justify-content:space-between;
+			align-items:center;
+			font-size:12px;
+			color:#252525;
+			padding-left:0.1rem;
+			.whitePaper{
+				color: #81838e;
+				padding-right:0.1rem;
+			}
+		}
+	}
+
+	.prod-spec{
+		height:0.7rem;
+		// background:skyblue;s
+		padding-left:0.1rem;
+		padding-top:0.2rem;
+		padding-right:0.1rem;
+		.prod-intro{
+			display:flex;
+			justify-content:space-between;
+			span{
+				display:block;
+				font-size:12px;
+				color:#252525;		
+			}
+			.choice{
+				color: #81838e;
+				margin-right:0.1rem;
+			}
+			.product{
+				display:flex;
+			}
+			.icon-dot3{
+				color:#2f2f31;
+			}
+		}
+		.extend{
+			font-size:14px;
+			line-height:28px;
+			text-indent:20px;
+		}
+	}
+
+	.goods-part{
+		height:0.9rem;
+		// background:skyblue;s
+		padding-left:0.1rem;
+		padding-top:0.2rem;
+		padding-right:0.1rem;
+		.prod-intro{
+			display:flex;
+			justify-content:space-between;			
+			.icon-dot3{
+				color:#2f2f31;
+			}
+		}
+		.choice{
+				color: #81838e;
+				margin-right:0.1rem;
+			}
+		span{
+				display:block;
+				font-size:12px;
+				color:#252525;		
+			}
+		.product{
+				display:flex;
+			}
+		.extend{
+			font-size:14px;
+			line-height:28px;
+			text-indent:20px;
+			color:red;
+		}
+	}
+	.server-floor{
+		height:0.2rem;
+		padding:0.1rem;
+		background:#f7f8fa;
+		.service{
+			display:flex;
+			align-items:center;
+			span{
+				font-size:14px;
+				color:#252525;	
+				padding-right:0.2rem;
+				color: #81838e;
+			}
+		}
+		
+	}
+	.shop-store{
+		height:1.56rem;
+		padding:0.1rem;
+		a{
+			display:block;
+			.top{
+				display:flex;
+				.logo{
+					width:0.8rem;
+					height:0.26rem;
+					margin-right:0.1rem;
+					img{
+						width:100%;
+						height:100%;
+					}
+						
+				}
+				.store{
+					span{
+						display:block;
+						color:#252525;
+						font-size:14px;
+						color: #81838e;
+						&:first-child{
+							font-size:18px;
+							color:#252525;
+						}
+					}
+				}
+			}
+
+		}
+		.mid{
+			display:flex;
+			margin-top:0.1rem;
+			a{
+				border-right:1px solid #eee;
+				text-align:center;
+				flex:1;
+				align-items:center;
+				span{
+					display:block;
+					font-size:14px;
+					color:#252525;
+				}
+				.number{
+					font-size:18px;
+				}
+				ul{
+					text-align:center;
+					li{
+						text-align:center;
+						display:flex;
+						font-size:14px;
+						span{
+							margin-left:0.1rem;
+						}
+					}
+				}
+			}
+		}		
+	}
+}

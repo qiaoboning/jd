@@ -1,0 +1,211 @@
+@charset "UTF-8";
+/*css document*/
+body, div, p, ul, ol, li, dl, dt, dd, table, tr, td, th, form, h1, h2, h3, h4, h5, h6, fieldset, figure, hr, img, input {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 26.67vw; }
+
+html, body {
+  height: 100%; }
+
+body {
+  font-family: "微软雅黑",Arial;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+ol, ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+img {
+  border: none;
+  display: block; }
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 0.4rem; }
+  header a {
+    flex: 1;
+    font-size: 0.16rem;
+    color: #2f2f31;
+    text-align: center; }
+  header .edit {
+    text-align: right;
+    color: #a3a3a5; }
+    header .edit span {
+      text-decoration: underline; }
+    header .edit .icon-msg0 {
+      margin-left: 0.15rem;
+      margin-right: 0.12rem;
+      text-decoration: none; }
+
+section {
+  flex: 1;
+  overflow-y: auto;
+  width: 100%; }
+  section .blank {
+    height: 0.1rem;
+    border-top: 1px solid #f1f0f4;
+    border-bottom: 1px solid #f1f0f4;
+    background: #f0f1f3; }
+  section .productList li {
+    height: 1.67rem; }
+    section .productList li .store {
+      padding: 0 0.05rem 0 0.12rem;
+      font-size: 0.13rem;
+      height: 0.45rem;
+      display: flex;
+      align-items: center;
+      background: #fafbf7; }
+      section .productList li .store .icon-guanzhudianpu {
+        margin-left: 0.13rem;
+        margin-right: 0.06rem; }
+    section .productList li .detail {
+      padding: 0 0.05rem 0 0.12rem;
+      display: flex;
+      align-items: center; }
+      section .productList li .detail .left {
+        display: flex;
+        align-items: center; }
+        section .productList li .detail .left input {
+          display: block; }
+        section .productList li .detail .left .picture {
+          width: 0.92rem;
+          height: 0.92rem;
+          border: 1px solid #f0f0f0;
+          border-radius: 5px;
+          margin: 0.1rem; }
+          section .productList li .detail .left .picture img {
+            width: 100%;
+            height: 100%; }
+      section .productList li .detail .right {
+        flex: 1; }
+        section .productList li .detail .right .top {
+          font-size: 0.12rem;
+          color: #7d7d7d; }
+          section .productList li .detail .right .top .content {
+            height: 0.35rem;
+            font-weight: bold;
+            line-height: 0.16rem;
+            overflow: hidden;
+            width: 1.7rem; }
+          section .productList li .detail .right .top .describe {
+            width: 1.4rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap; }
+        section .productList li .detail .right .bottom {
+          padding-top: 0.2rem;
+          font-size: 0.12rem;
+          display: flex;
+          align-items: center;
+          justify-content: space-between; }
+          section .productList li .detail .right .bottom .price {
+            color: #cc5f6f; }
+          section .productList li .detail .right .bottom .quality {
+            width: 0.85rem;
+            height: 0.23rem;
+            border: 1px solid #ededed;
+            border-radius: 5px; }
+            section .productList li .detail .right .bottom .quality div {
+              float: left;
+              line-height: 0.23rem;
+              color: #d5d5d5; }
+            section .productList li .detail .right .bottom .quality .reduce {
+              width: 0.25rem;
+              text-align: center; }
+            section .productList li .detail .right .bottom .quality .number {
+              width: 0.35rem;
+              text-align: center;
+              border-right: 1px solid #ededed;
+              border-left: 1px solid #ededed;
+              box-sizing: border-box; }
+            section .productList li .detail .right .bottom .quality .plus {
+              width: 0.25rem;
+              text-align: center; }
+  section .goodsList .recommend {
+    height: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.16rem;
+    background: #f1f2f4;
+    color: #606163; }
+  section .goodsList .goods {
+    display: flex;
+    flex-wrap: wrap;
+    background: #f2f1f9; }
+    section .goodsList .goods a {
+      background: #fff;
+      margin-bottom: 6px;
+      display: block;
+      width: 49%;
+      height: 2.62rem; }
+      section .goodsList .goods a .goodsPic {
+        height: 1.85rem; }
+        section .goodsList .goods a .goodsPic img {
+          width: 100%;
+          height: 100%; }
+      section .goodsList .goods a .goods_bottom {
+        padding: 0 0.05rem;
+        box-sizing: border-box; }
+        section .goodsList .goods a .goods_bottom .intro {
+          display: block;
+          font-size: 0.12rem;
+          color: #454547;
+          height: 0.42rem;
+          line-height: 0.2rem;
+          overflow: hidden; }
+        section .goodsList .goods a .goods_bottom .details {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 0.05rem; }
+          section .goodsList .goods a .goods_bottom .details .price {
+            font-size: 12px;
+            color: #e06d6b;
+            display: block; }
+          section .goodsList .goods a .goods_bottom .details .icon-cart {
+            display: block;
+            width: 0.25rem;
+            height: 0.25rem;
+            border: 1px solid #f5f5f5;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 0.25rem;
+            color: #919096; }
+    section .goodsList .goods a:nth-child(2n) {
+      margin-left: 1%; }
+    section .goodsList .goods a:nth-child(2n+1) {
+      margin-right: 1%; }
+
+footer .calculate {
+  font-size: 0.16rem;
+  height: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  footer .calculate p {
+    padding-left: 0.1rem;
+    display: flex;
+    align-items: center; }
+    footer .calculate p input {
+      display: block; }
+    footer .calculate p .allChoose {
+      font-size: 0.14rem;
+      padding-right: 0.2rem; }
+  footer .calculate .cal {
+    display: block;
+    width: 0.8rem;
+    height: 0.4rem;
+    background: #de443c;
+    line-height: 0.4rem;
+    color: #fff;
+    text-align: center; }
